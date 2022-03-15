@@ -1,15 +1,8 @@
-# input do mes em pt
-# ler as tabelas
-# ver qual mes bate cm ele
-# transformar o mes em pt para elf
-
 # import
 import pandas as pd
 
 tabelaElfico = pd.read_excel('elfi2.xlsx')
-ptInput = input("Insira a palavra em portuges: ")
-
-#print(tabelaElfico)
+ptInput = input("Insira a palavra em portugues: ")
 
 if(tabelaElfico['Port'] == ptInput).any():
     linha = tabelaElfico['Port'] == ptInput
